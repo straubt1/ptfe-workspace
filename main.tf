@@ -39,7 +39,7 @@ module "appserver" {
 
   name      = var.name
   location  = var.location
-  subnet_id = module.networking.subnet-ids[0]
+  subnet_id = module.networking.subnet-ids[1]
   vm_count  = 1
   username  = var.username
   password  = var.password
@@ -51,7 +51,7 @@ module "dataserver" {
 
   name      = var.name
   location  = var.location
-  subnet_id = module.networking.subnet-ids[0]
+  subnet_id = module.networking.subnet-ids[2]
   vm_count  = 1
   username  = var.username
   password  = var.password
