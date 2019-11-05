@@ -4,7 +4,7 @@ data "terraform_remote_state" "stuff" {
   backend = "remote"
 
   config = {
-    hostname     = "bootcamp-tfe.digitalinnovation.dev"
+    # hostname     = "bootcamp-tfe.digitalinnovation.dev"
     organization = "hashicorp"
     token         = "${var.token}"
     workspaces = {
