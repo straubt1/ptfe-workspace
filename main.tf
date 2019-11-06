@@ -1,7 +1,9 @@
 variable "prefix" {}
 variable "location" {}
 variable "tags" {
-  default = {}
+  default = {
+    notags = "bad"
+    }
   type    = map
 }
 
