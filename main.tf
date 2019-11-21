@@ -11,10 +11,3 @@ resource "azurerm_resource_group" "main" {
 
   tags = var.tags
 }
-
-resource "azurerm_resource_group" "another" {
-  name     = "${var.prefix}-another-rg"
-  location = var.location
-
-  tags = var.tags
-}
