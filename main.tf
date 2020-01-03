@@ -11,3 +11,4 @@ resource "azurerm_resource_group" "main" {
 
   tags = var.tags
 }
+
