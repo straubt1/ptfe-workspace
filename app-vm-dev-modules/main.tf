@@ -16,7 +16,7 @@ locals {
 
 module "vm" {
   source  = "tfe-nfcu.digitalinnovation.dev/hashicorp/vm/vsphere"
-  version = "0.0.1"
+  version = "0.0.2"
 
   datacenter_name      = local.datacenter_name
   cluster_name         = local.cluster_name
