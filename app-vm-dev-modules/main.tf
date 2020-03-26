@@ -1,6 +1,6 @@
 # Provider Credentials can be loaded via
 # export VSPHERE_SERVER=""
-# export VSPHERE_USERNAME=""
+# export VSPHERE_USER=""
 # export VSPHERE_PASSWORD=""
 provider "vsphere" {
   allow_unverified_ssl = true
@@ -9,13 +9,13 @@ provider "vsphere" {
 locals {
   datacenter_name      = "Datacenter"
   cluster_name         = "East"
-  datastore_name       = "<DATASTORE_NAME>"
+  datastore_name       = "380SSDDatastore2"
   network_name         = "VM Network"
-  virtual_machine_name = "<VM_NAME>"
+  virtual_machine_name = "tt-tfe-vm"
 }
 
 module "vm" {
-  source  = "TFE_HOSTNAME/YOUR_ORG_NAME/vm/vsphere"
+  source  = "TFE_HOSTNAME/hashicorp/vm/vsphere"
   version = "0.0.1"
 
   datacenter_name      = local.datacenter_name
