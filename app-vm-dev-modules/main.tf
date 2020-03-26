@@ -22,6 +22,5 @@ module "vm" {
   cluster_name         = local.cluster_name
   datastore_name       = local.datastore_name
   network_name         = local.network_name
-  datacenter_name      = local.datacenter_name
   virtual_machine_name = local.virtual_machine_name
 }
