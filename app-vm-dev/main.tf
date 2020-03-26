@@ -9,7 +9,7 @@ provider "vsphere" {
 locals {
   datacenter_name      = "Datacenter"
   cluster_name         = "East"
-  datastore_name       = "tt-datastore-00"
+  datastore_name       = "380SSDDatastore2"
   network_name         = "VM Network"
   virtual_machine_name = "tt-tfe-vm"
 }
