@@ -13,6 +13,10 @@ resource "random_pet" "names" {
   prefix = var.name_prefix
 }
 
+resource "random_pet" "single_name" {
+  prefix = var.name_prefix
+}
+
 output "names" {
   value = random_pet.names.*.id
 }
