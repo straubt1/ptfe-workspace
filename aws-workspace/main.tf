@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-east-2"
-}
-
 resource "random_pet" "main" {
   length = 3
 }
