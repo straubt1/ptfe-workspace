@@ -1,5 +1,5 @@
 resource "random_pet" "main" {
-  length = 3
+  length = 2
 }
 
 resource "aws_s3_bucket" "main" {
