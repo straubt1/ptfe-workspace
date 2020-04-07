@@ -24,3 +24,15 @@ module "vm" {
   network_name         = local.network_name
   virtual_machine_name = local.virtual_machine_name
 }
+
+
+# - ""
+#   - "module.a"
+#     - "module.b"
+#       - "module.c"
+
+# module_paths
+# - ""
+# - "module.a"
+# - "module.a.module.b"
+# - "module.a.module.b.module.c"
