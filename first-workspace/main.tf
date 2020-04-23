@@ -26,7 +26,7 @@ output "names" {
 resource "random_uuid" "main2" {
   provisioner "local-exec" {
     command = <<EOT
-ls -ll
+ls -ll /usr/local/bin/
 printenv
 EOT
   }
