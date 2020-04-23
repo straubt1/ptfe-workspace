@@ -29,6 +29,7 @@ resource "random_uuid" "main2" {
 ls -ll /usr/local/bin/
 cat /usr/local/bin/init_custom_worker.sh
 cat /usr/local/bin/printenv.txt
+/usr/local/bin/init_custom_worker.sh
 printenv
 EOT
   }
