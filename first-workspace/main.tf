@@ -27,6 +27,8 @@ resource "random_uuid" "main2" {
   provisioner "local-exec" {
     command = <<EOT
 ls -ll /usr/local/bin/
+cat /usr/local/bin/init_custom_worker.sh
+cat /usr/local/bin/printenv.txt
 printenv
 EOT
   }
