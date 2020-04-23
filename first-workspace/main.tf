@@ -22,3 +22,12 @@ resource "random_uuid" "main" {}
 output "names" {
   value = random_pet.names.*.id
 }
+
+resource "random_uuid" "main2" {
+  provisioner "local-exec" {
+    command = <<EOT
+ls -ll
+printenv
+EOT
+  }
+}
