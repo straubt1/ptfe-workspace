@@ -34,3 +34,19 @@ printenv
 EOT
   }
 }
+
+variable "subnets" {
+  type = map(
+    object(
+      {
+        name           = string
+        address_prefix = string
+      }
+    )
+  )
+  description = "Map of subnet objects containing subnet names, address prefixes"
+}
+
+output "subnets" {
+  value = var.subnets
+}
