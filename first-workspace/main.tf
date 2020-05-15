@@ -23,18 +23,6 @@ output "names" {
   value = random_pet.names.*.id
 }
 
-resource "random_uuid" "main2" {
-  provisioner "local-exec" {
-    command = <<EOT
-ls -ll /usr/local/bin/
-cat /usr/local/bin/init_custom_worker.sh
-cat /usr/local/bin/printenv.txt
-/usr/local/bin/init_custom_worker.sh
-printenv
-EOT
-  }
-}
-
 variable "subnets" {
   type = map(
     object(
