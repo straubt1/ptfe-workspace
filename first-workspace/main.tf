@@ -38,3 +38,4 @@ variable "subnets" {
 output "subnets" {
   value = var.subnets
 }
+
